@@ -98,10 +98,6 @@
 
 	}
 
-	.section4
-	{
-		height: auto;
-	}
 
 	.slideshow
 	{
@@ -208,6 +204,8 @@
 		line-height: 1.5em;
 		width: 90%;
 	}
+
+
 }
 
 
@@ -240,7 +238,10 @@
 		margin: auto;
 	}
 
-
+	.section4
+	{
+		height: 28em;
+	}
 	
 }
 
@@ -297,6 +298,16 @@
 	{
 		font-size: .8em;
 	}
+
+	.section4
+	{
+		height: 30em;
+	}
+
+	.sl p
+	{
+		font-size: .9em;
+	}
 }
 
 @media(max-width: 280px)
@@ -346,6 +357,16 @@
 	{
 		width: 15px;
 	}
+
+	.section4
+	{
+		height: 30em;
+	}
+
+	.sl p
+	{
+		font-size: .8em;
+	}
 }
 
 
@@ -359,6 +380,16 @@
 	.button2
 	{
 		transform: scale(0.6);
+	}
+
+	.section4
+	{
+		height: 33em;
+	}
+
+	.sl p
+	{
+		font-size: .75em;
 	}
 }
 
@@ -407,6 +438,22 @@
 		left: 0;
 		right: 0;
 		margin: auto;
+	}
+
+	.section4
+	{
+		height: 36em;
+	}
+
+	.sl p
+	{
+		font-size: .75em;
+	}
+
+	.buttons
+	{
+		transform: scale(0.8);
+		bottom: -70px;
 	}
 
 
