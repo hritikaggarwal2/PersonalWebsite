@@ -348,6 +348,7 @@ span
     width: 100%;
 	background: url('../img/foodyback.png') #283546;
 	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	background-size: cover;
 	padding: 40px 0px;
 	height: auto;
@@ -394,7 +395,7 @@ span
 
 .section6 h2
 {
-	color: #222;
+	color: #293a4a;
 	letter-spacing: 1px;
 	margin: 20px 70px 0 70px;
 }
@@ -461,10 +462,12 @@ span
 	letter-spacing: 1px;
 }
 
-.lc:hover > .button
+.lc:hover .button
 {
-	background: #257183;
+	background: #293a4a;
 }
+
+
 
 
 .section7
@@ -627,12 +630,18 @@ span
 
 .content-right {
 	display: inline-block;
-	/*float: right;*/
 	width: 60%;
+	height: 100%;
 	z-index: 6666;
 	position: absolute;
 	right: -8%;
-	top: -2%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.content-right img
+{
+	width: 400px;
 }
 
 .content-left {
