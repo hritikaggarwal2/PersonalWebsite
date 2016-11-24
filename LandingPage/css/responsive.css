@@ -1,0 +1,413 @@
+@media(max-width: 900px)
+{
+	.section2 h2
+	{
+		font-size: 1em;
+		line-height: 6em;
+	}
+
+	.button2
+	{
+		transform: scale(0.8);
+	}
+
+	.sv
+	{
+		width: 40%;
+	}
+
+	.review
+	{
+		width: 90%;
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.sl h3
+	{
+		width: 90%;
+		margin: 20px;
+	}
+
+	.slideshow
+	{
+		width: 70%;
+		margin: 20px 0 0 20px;
+		height: 100%;
+		display: inline-block;
+		overflow: hidden;
+		position: relative;
+	}
+
+}
+@media(max-width: 750px)
+{
+	.section8 p
+	{
+		width: 500px;
+	}
+
+}
+
+@media(max-width: 660px)
+{
+	
+
+
+	.section2
+	{
+		height: auto;
+		padding: 15px 0 ;
+	}
+
+	.section2 h2
+	{
+		font-size: 1.4em;
+		line-height: 2.4em;
+		display: block;
+		text-align: center;
+		margin: 0px;
+	}
+
+	.button2
+	{
+		display: block;
+		transform: scale(0.8);
+		position: relative;
+		padding: 10px 5px; 
+		right: 0px;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		vertical-align: none;
+		width: 150px;
+		height: 35px;
+		border-radius: 5px;
+		border:2px solid #eee;
+		margin: auto;
+		text-align: center;
+		line-height: 35px;
+
+	}
+
+	.quote
+	{
+		display: none;
+
+	}
+
+	.section4
+	{
+		height: auto;
+	}
+
+	.slideshow
+	{
+		width: 100%;
+		margin: 10px auto;
+		height: 100%;
+	}
+
+	.review
+	{
+		width: 90%;
+		margin: auto;
+	}
+
+	.sl p
+	{
+		text-align: center;
+	}
+
+	.sl h3
+	{
+		width: 90%;
+		margin: 20px;
+	}
+
+	.slideshow h1
+	{
+		text-align: center;
+		font-size: 1.2em;
+		margin-top: 100px;
+	}
+
+	.section8 h2
+	{
+		font-size: 1.2em;
+		
+	}
+}
+
+
+@media(max-width: 600px)
+{
+
+	.section1 h3
+	{
+		font-size: 1.8em;
+	}
+
+	.section1 h1
+	{
+		color: #eee;
+		text-align: center;
+		font-size: 2.5em;
+		letter-spacing: 1px;
+	}
+
+	.section1 p
+	{
+		font-size: .8em;
+	}
+
+	.section2 h2
+	{
+		font-size: 1em;
+	}
+
+	.sv h4
+	{
+		font-size: 12px;
+	}
+
+	.sv p
+	{
+		font-size: 11px;
+	}
+
+	.section7 h2
+	{
+		margin: 20px auto 0 auto;
+		position: relative;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	.section7 .dishes
+	{
+		width: 100%;
+	}
+
+	.section7 .dd
+	{
+		margin: 10px;
+		width: 100px;
+		height: auto;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.section8 p
+	{
+		font-size: .9em;
+		line-height: 1.5em;
+		width: 90%;
+	}
+}
+
+
+@media(max-width: 450px)
+{
+	.section1 h3
+	{
+		font-size: 1.3em;
+	}
+
+	.section1 h1
+	{
+		color: #eee;
+		text-align: center;
+		font-size: 1.8em;
+		letter-spacing: 1px;
+	}
+
+	.section1 p
+	{
+		font-size: .8em;
+		width: 90%;
+	}
+
+	.section2 h2
+	{
+		font-size: 1em;
+		line-height: 1.4em;
+		width: 80%;
+		margin: auto;
+	}
+
+
+	
+}
+
+@media(max-width: 350px)
+{
+	.section1 h3
+	{
+		font-size: 1em;
+	}
+
+	.section1 h1
+	{
+		color: #eee;
+		text-align: center;
+		font-size: 1.5em;
+		letter-spacing: 1px;
+	}
+
+	.section3
+	{
+		padding: 30px 0;
+	}
+
+	.section1 p
+	{
+		font-size: .8em;
+		width: 90%;
+	}
+
+	.service
+	{
+		width: 100%;
+	}
+
+	.sv
+	{
+		width: 35%;
+		height: 150px;
+		overflow: hidden;
+	}
+	
+	.sv h4
+	{
+		font-size: 12px;
+	}
+
+	.sv p
+	{
+		font-size: 11px;
+		line-height: 1.1em;
+	}
+
+	.section9 p
+	{
+		font-size: .8em;
+	}
+}
+
+@media(max-width: 280px)
+{
+	.section1 h3
+	{
+		font-size: .8em;
+	}
+
+	.section1 span
+	{
+		font-size: 70px;
+	}
+
+	.section1 h1
+	{
+		color: #eee;
+		text-align: center;
+		font-size: 1.5em;
+		letter-spacing: 1px;
+	}
+
+	.section1 p
+	{
+		font-size: .8em;
+		width: 90%;
+	}
+
+	.service
+	{
+		width: 80%;
+	}
+
+	.sv
+	{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.section9 p
+	{
+		font-size: .6em;
+	}
+
+	.section9 .heart
+	{
+		width: 15px;
+	}
+}
+
+
+@media(max-width: 240px)
+{
+	.content
+	{
+		transform: scale(.8) translateY(-70%);
+	}
+
+	.button2
+	{
+		transform: scale(0.6);
+	}
+}
+
+@media(max-width: 200px)
+{	
+	.content
+	{
+		transform: scale(1) translateY(-50%);
+	}
+
+	.section1 h3
+	{
+		font-size: 1em;
+	}
+
+	.section1 span
+	{
+		font-size: inherit;
+	}
+
+	.section1 h1
+	{
+		color: #eee;
+		text-align: center;
+		font-size: 1.1em;
+		letter-spacing: 1px;
+	}
+
+	.section1 p
+	{
+		font-size: .8em;
+		width: 90%;
+	}
+
+	.button1
+	{
+		transform: scale(0.8);
+	}
+
+	.button2
+	{
+		transform: scale(0.6);
+		width: 100px;
+		font-size: .8em;
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+
+}
