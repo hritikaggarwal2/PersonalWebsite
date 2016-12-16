@@ -276,6 +276,14 @@ div.upload input {
 
 @media(max-width: 350px)
 {
+	.logo
+	{
+		top: 10px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
 	.container
 	{
 		width: 250px;
