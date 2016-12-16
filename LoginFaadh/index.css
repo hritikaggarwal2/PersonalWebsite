@@ -9,15 +9,15 @@ body,html
 {
 	width: 100%;
 	height: 100%;
-	background: #fff;
 	font-family: montserrat;
-	background: #30b9db;
-    background: -webkit-linear-gradient(#30b9db, #1ba2c3);
-    background: -o-linear-gradient(#30b9db, #1ba2c3);
-    background: -moz-linear-gradient(#30b9db, #1ba2c3);
-    background: linear-gradient(#30b9db, #1ba2c3);
+	background: #d83a6b;
+    background: -webkit-radial-gradient(top right, #d83a6b, #79348f);
+    background: -o-radial-gradient(top right, #d83a6b, #79348f);
+    background: -moz-radial-gradient(top right, #d83a6b, #79348f);
+    background: radial-gradient(at top right, #d83a6b, #79348f);
 	overflow: hidden;
 }
+
 
 .whole
 {
@@ -31,9 +31,20 @@ body,html
     transition: 1s ease;
 }
 
+.logo
+{
+	width: 150px;
+	height: 100px;
+	background: url(logo_white.png) 50% 50% no-repeat;
+	background-size: contain;
+	position: fixed;
+	top: 20px;
+	left: 50px;
+}
+
 .login
 {
-	width: 49.8%;
+	width: 49%;
 	height: 100%;
 	display: inline-block;
 	overflow: hidden;
@@ -41,7 +52,7 @@ body,html
 
 .signup
 {
-	width: 50%;
+	width: 49%;
 	height: 100%;
 	display: inline-block;
 	overflow: hidden;
@@ -62,7 +73,7 @@ body,html
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding:10px;
+    padding: 10px;
 }
 
 input[type="text"]
@@ -73,7 +84,7 @@ input[type="text"]
 	padding:10px;
 	display: block;
 	margin:20px auto;
-	color: #2c9cb8;
+	color: #e54778;
 	border-bottom: 1px solid #aaa;
 }
 
@@ -86,7 +97,7 @@ input[type="password"]
 	padding:10px;
 	display: block;
 	border-bottom: 1px solid #aaa;
-	color: #2c9cb8;
+	color: #e54778;
 }
 
 input[type="email"]
@@ -98,7 +109,7 @@ input[type="email"]
 	padding:10px;
 	display: block;
 	border-bottom: 1px solid #aaa;
-	color: #2c9cb8;
+	color: #e54778;
 }
 
 p
@@ -115,7 +126,7 @@ input[type="submit"]
 	outline: none;
 	width: 150px;
 	height: 45px;
-	background: #30b9db;
+	background: #e54778;
 	border-radius: 5px;
 	color: #eee;
 	letter-spacing: 1px;
@@ -129,7 +140,7 @@ input[type="submit"]
 
 input[type="submit"]:hover
 {
-	background: #2ba2bf;
+	background: #d83a6b;
 }
 
 button
@@ -137,7 +148,7 @@ button
 	border: none;
 	background: none;
 	outline: none;
-	color: #30b9db;
+	color: #d83a6b;
 	letter-spacing: 1px;
 	font-weight: 600;
 	margin:25px auto;
@@ -150,13 +161,13 @@ button
 
 button:hover
 {
-	border-bottom: 1px solid #30b9db;
+	border-bottom: 1px solid #d83a6b;
 }
 
 
 input:focus
 {
-	border-bottom: 1px solid #30b9db;
+	border-bottom: 1px solid #d83a6b;
 
 }
 
@@ -167,11 +178,7 @@ div.upload {
 	width: 150px;
 	height: 38px;
 	color: #30b9db;
-	background:url("back.png") 50% 50% no-repeat;
-	background-size: contain;
-	border-radius: 5px;
-	border: 1px solid #30b9db;
-	color: #eee;
+	background:#e54778;
 	letter-spacing: 1px;
 	font-weight: 600;
 	margin:20px auto;
@@ -180,6 +187,24 @@ div.upload {
 	cursor: pointer;
 	overflow: hidden;
 	margin-top: 30px;
+	position: relative;
+}
+
+.upload::before
+{
+	content: "Upload Photo";
+	font-family: lato;
+	font-weight: 400;
+	color: #fff;
+	font-size: .8em;
+	letter-spacing: 1px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	line-height: 38px;
+	margin:auto;
 }
 
 .upload span
@@ -206,4 +231,69 @@ div.upload input {
     overflow: hidden !important;
 	cursor: pointer;
     background: transparent;
+}
+
+@media(max-width: 550px)
+{
+
+	.logo
+	{
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	
+	.container
+	{
+		width: 300px;
+	    padding: 10px;
+	}
+
+
+}
+
+@media(max-width: 350px)
+{
+	
+	.container
+	{
+		width: 250px;
+		height: auto;
+		border-radius: 5px;
+	    padding: 20px 5px;
+	}
+
+	input[type="submit"]
+	{
+		width: 120px;
+		height: 40px;
+		margin:20px auto;
+		margin-top: 30px;
+	}
+
+}
+
+@media(max-width: 350px)
+{
+	.container
+	{
+		width: 250px;
+		height: auto;
+		border-radius: 5px;
+	    padding: 20px 5px;
+	}
+
+	input[type="submit"]
+	{
+		width: 120px;
+		height: 40px;
+		background: #e54778;
+		border-radius: 5px;
+		color: #eee;
+		font-weight: 600;
+		margin:20px auto;
+		margin-top: 30px;
+	}
+
 }
