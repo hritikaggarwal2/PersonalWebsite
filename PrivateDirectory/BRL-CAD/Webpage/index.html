@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>BRL-CAD</title>
+	<title>OGV</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,109 +33,83 @@
 <div class="section1">
 	<div class="black">
 		<div class="content">
-			<img src="logo.svg">
-			<h1>BRL-CAD</h1>
-			<button class="download">DOWNLOAD v7.26.0</button>
+			<img src="logo.png">
+			<h1>Online Geometry Viewer</h1>
+			<h3>BY BRL-CAD</h3><br>
+			<button class="download">START NOW</button>
 			<button class="Learn">RELEASE NOTES</button>
 		</div>
 	</div>
 </div>
 
 <div class="section2">
-	<h2>What is BRL-CAD ?</h2><br>
-	<p class="light">BRL-CAD is a powerful <span class="pink">open source cross-platform</span> solid modeling system that includes interactive geometry editing, high-performance ray-tracing for rendering and geometric analysis, a system performance analysis benchmark suite, geometry libraries for application developers, and more than 30 years of active development.</p>
+	<h2>WHAT IS OGV?</h2>
+	<p class="light starter" align="center">Know us inside out</p>
+	<br>
+	<p class="light">OGV short for Online Geometry Viewer is one of our best <span class="pink">open source environment</span> which is an online web app, where users can upload, view and share <span class="pink">3D CAD models</span>. Users can also host these models online, can like or comment on them. In a nutshell it can be looked at as a social blogging platform for 3D models.</p>
 
-	<p class="light">One of our best open source environment is the Online Geometry Viewer (OGV) which is an online web app, where users can upload, view and share 3D CAD models. Users can also host these models online, can like or comment on them. In a nutshell it can be looked at as a social blogging platform for 3D models.</p>
-
+	<h5>What Motivates Us?</h5>
+		<p class="light">When we built our initial HTML web pages in 90s we din't have an &lt;img&gt; tag. Just a few years back Video was a foreign element added via third party plugins. Today images,videos and audio all have become first class citizens of the web. HTML 5 has introduced many new members to the family. Canvas, WebGL and SVG being few of them. These technologies allow us to manipulate and access 2d and 3d graphics right in the browser. Today we have incredible power in our hands when it comes to handling graphics on web. Even with technologies like WebGL, 3D graphics have not yet become a part of our daily web experience. We believe in OGV as one of those platforms that will make sharing 3D models on the web as normal as sharing videos on youtube or images on flickr.</p>
 	<div class="hidden">
 		<div class="fullContainer">
-		<h3>Features</h3>
-		<p class="light"><span>Real Time</span><br>
-		Online Geometry Viewer is written using metoerJS which is Real Time by default. Thus if a user comments on your model, it magically gets updated in real time and you can see it without need of any refresh or much delay.</p>
+		<h5>History of OGV</h5>
+		<p class="light">OGV started as a Google Summer of Code project in 2013 by Harmanpreet Singh. It was written in PHP on server side and HTML, CSS and Javascript on the client side. It used MySQL for database. For viewing models in web browser a webGL based library called three.js was used. Users could upload 3D models and view them in 3D online. After the GSoC 2013 was complete, there were discussions at BRL-CAD mailing list regarding infrastructure of OGV. It started with moving from vanilla PHP to using some framework and then moved towards using nodejs for OGV. Thus in GSoC 2014, another GSoC project by Inderpreet Singh aimed at moving OGV from PHP to nodejs using a full stack framework meteorjs. Few extra features mostly regarding making it social were also added.</p>
 
-		<p class="light"><span>Authentication & User Profiles</span>
-		<br><u>Email Verification</u>: Users can easily sign up on the website by just filling out a small form but before they can upload anything, they need to verify their email Id otherwise they get an error. For verification an email is sent to user with a link, clicking on this link completes the verification.<br>
-		<br>
-		<u>User Roles</u>: There are currently two kinds of users in OGV, admin and normal. By default any user that signs up is a normal user. One admin user with email id (test@example.com) is automatically created during the first start.<br>
-		<br>
-		<u>Profile settings</u>: Users can change their name, add a short bio and a profile picture to their profile. These settings are easily available at a url Root_url/settings where Root_url is as you might have guessed the main url where OGV is hosted.</p>
-
-		<p class="light"><span>Uploader</span><br>
-		OGV uses CollectionFS a file handling package available at Atmosphere. Using this package, OGV uploader provides both drag 'n' drop as well as input field for uploading the model files.</p>
-
-		<p class="light"><span>File types supported</span><br>
-		Currently OGV supports only .g file as input for uploader, in future it will support more of them.</p>
-
-		<p class="light"><span>Model Meta</span><br>
-		Each model can have a representative image, that will be shown in model feed. Along with that it can also have a description that can accompany the image. Users can also change name of the model. This editing option is visible to user immediately after user uploads the model.</p>
 		</div>
 	</div>
+
 	<center>
-		<button class="more">Learn More About Online Geomtery Viewer</button>
+		<button class="more">Learn More</button>
 	</center>
-	<h4>Latest News</h4><br>
-	<div class="row">
-		<div class="leftImg">
-			<img src="rocket.png">
-		</div>
-		<div class="leftTxt"><br>
-			<h6>Release 7.26.0</h6>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-		</div>
-		<div class="leftDt">
-			<p class="date">16 August 2016</p>
-		</div>
-	</div>
 
-	<div class="row">
-		<div class="leftImg">
-			<img src="flag.png">
-		</div>
-		<div class="leftTxt"><br>
-			<h6>test</h6>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-		</div>
-		<div class="leftDt">
-			<p class="date">15 August 2016</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="leftImg">
-			<img src="play.png">
-		</div>
-		<div class="leftTxt"><br>
-			<h6>It's live!</h6>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-		</div>
-		<div class="leftDt">
-			<p class="date">14 August 2016</p>
-		</div>
-	</div>
 </div>
 
 <div class="section4">
-	<h2>Highlights</h2>
-	<p>Some more text</p>
+	<h2>FEATURES</h2>
+	<p class="light">We make OGV better each day</p>
 	<div class="lineBox">
 		<div class="bb b1">
 			<div class="overlay">
-				<h3>Cross Platform</h3>
+				<h3>Real Time</h3>
 			</div>
 		</div>
 		<div class="bb b2">
 			<div class="overlay">
-				<h3>Since 1979</h3>
+				<h3>Authentication & User Profiles</h3>
 			</div>	
 		</div>
 		<div class="bb b3">
 			<div class="overlay">
-				<h3>Trusted By U.S Military</h3>
+				<h3>CollectionFS Uploader</h3>
 			</div>	
 		</div>
 		<div class="bb b4">
 			<div class="overlay">
-				<h3>Free & Open</h3>
+				<h3>Supports .g Files</h3>
+			</div>	
+		</div>
+
+		<div class="bb b5">
+			<div class="overlay">
+				<h3>Model Feeds</h3>
+			</div>	
+		</div>
+
+		<div class="bb b6">
+			<div class="overlay">
+				<h3>Personal File Manager</h3>
+			</div>	
+		</div>
+
+		<div class="bb b7">
+			<div class="overlay">
+				<h3>Enhanced Model Viewer</h3>
+			</div>	
+		</div>
+
+		<div class="bb b8">
+			<div class="overlay">
+				<h3>Model Meta</h3>
 			</div>	
 		</div>
 	</div>
@@ -143,29 +117,108 @@
 
 
 <div class="section3">
+	<h2>TECH SPECS</h2>
+	<p class="light">We have more to tell you</p>
+	<div class="box">
+		<img src="structure.png">
+		<h3>Directory Structure</h3>
+		<p>At the top level meteor's default coding structure is used for separating server code, client code, collections etc. Inside client there are two folders one for templates and other views. Templates hold the html content while views hold the logic part, the JS content for client. All other folders are self-explanatory.</p>
+	</div>
+
 	<div class="box">
 		<img src="code.png">
-		<h3>Open Source</h3>
-		<p>100% FREE with people all over the world contributing their thoughts. Escape vendor lock-in, for any purpose, forever.</p>
+		<h3>Coding Standards</h3>
+		<p>It has been tried to follow BRL-CAD hacking guide as much as possible with exception in callback functions where the curly brackets '{' of the function that's being passed as parameter does not start in next line (as it's done with other functions).</p>
 	</div>
 
-	<div class="box">
-		<img src="heart.png">
-		<h3>Join Us</h3>
-		<p>Help make a better CAD system, make modeling fun. No experience necessary.</p>
-	</div>
-
-	<div class="box">
-		<img src="solid.png">
-		<h3>Solid Modeling</h3>
-		<p>Hybrid CSG and B-REP kernel with innovative methods for unambiguous 3D geometry. Verification, validation, performant.</p>
-	</div>
 	<br>
 
 	<button>GET INVOLVED</button>
 </div>
 
+<div class="section5">
+	<h2>SOME HANDPICKED WORKS</h2>
+	<p class="light">Great people give great Contributions</p>
+	<div class="works">
+		<div class="boxy">
+			<img src="a.png">
+			<h3>Chess Titans</h3>
+			<p>
+			<span>Made By :</span> Hritik Aggarwal<br>
+			<span>Time Taken :</span> 10 Minutes<br>
+			<span>Desciption :</span> My first even 3D model. It is just too good :)<br>
+			</p>
+			<center>
+				<button>View Work</button>
+			</center>
+		</div>
 
+		<div class="boxy">
+			<img src="disc.png">
+			<h3>Frisbee</h3>
+			<p>
+			<span>Made By :</span> Hritik Aggarwal<br>
+			<span>Time Taken :</span> 10 Minutes<br>
+			<span>Desciption :</span> My first even 3D model. It is just too good :)<br>
+			</p>
+			<center>
+				<button>View Work</button>
+			</center>
+		</div>
+
+		<div class="boxy">
+			<img src="cone.png">
+			<h3>3D Cone</h3>
+			<p>
+			<span>Made By :</span> Hritik Aggarwal<br>
+			<span>Time Taken :</span> 10 Minutes<br>
+			<span>Desciption :</span> My first even 3D model. It is just too good :)<br>
+			</p>
+			<center>
+				<button>View Work</button>
+			</center>
+		</div>
+
+		<div class="boxy">
+			<img src="cone.png">
+			<h3>Cone 2</h3>
+			<p>
+			<span>Made By :</span> Hritik Aggarwal<br>
+			<span>Time Taken :</span> 10 Minutes<br>
+			<span>Desciption :</span> My first even 3D model. It is just too good :)<br>
+			</p>
+			<center>
+				<button>View Work</button>
+			</center>
+		</div>
+
+		<div class="boxy">
+			<img src="a.png">
+			<h3>Chess Titans</h3>
+			<p>
+			<span>Made By :</span> Hritik Aggarwal<br>
+			<span>Time Taken :</span> 10 Minutes<br>
+			<span>Desciption :</span> My first even 3D model. It is just too good :)<br>
+			</p>
+			<center>
+				<button>View Work</button>
+			</center>
+		</div>
+
+		<div class="boxy">
+			<img src="disc.png">
+			<h3>Disc</h3>
+			<p>
+			<span>Made By :</span> Hritik Aggarwal<br>
+			<span>Time Taken :</span> 10 Minutes<br>
+			<span>Desciption :</span> My first even 3D model. It is just too good :)<br>
+			</p>
+			<center>
+				<button>View Work</button>
+			</center>
+		</div>
+	</div>
+</div>
 
 <div class="contact"><br>
 	<h1>STAY IN TOUCH</h1>

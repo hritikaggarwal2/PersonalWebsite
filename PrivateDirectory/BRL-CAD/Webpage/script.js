@@ -45,7 +45,7 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$(".hidden").css({height:ht});
 			},1000);
-			$(".more").html("Learn Less About Online Geomtery Viewer");
+			$(".more").html("Done Reading");
 		}
 		else
 		{
@@ -54,7 +54,7 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$(".section2 button").css({top:"0px"});
 			},1000);
-			$(".more").html("Learn More About Online Geomtery Viewer");
+			$(".more").html("Learn More");
 			click = 1;
 		}
 
