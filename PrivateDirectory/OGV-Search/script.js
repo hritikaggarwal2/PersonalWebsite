@@ -15,7 +15,6 @@ $(document).ready(function(){
 
 			if(jQuery.trim(searchText).length > 0)
 			{
-
 				display();
 			}
 			else
@@ -51,6 +50,46 @@ $(document).ready(function(){
 	
 	checkLikes();
 
+	function checkLikes()
+	{
+		$(".love").click(function(){
+			console.log("asd");
+			var myClass = this.className;
+			myClass = myClass.split(' ');
+			console.log("asd");
+			
+			if(listLikes[(myClass[1].split("ll")[1])] == false)
+			{
+				editClass = "." + myClass[1] + " .no";
+				editClass = "." + myClass[1] + " .no";
+				currLikes = $(editClass).html();
+				$(editClass).html(parseInt(currLikes) + 1);
+				
+				listLikes[(myClass[1].split("ll")[1])] = true;
+
+				$(("." + myClass[1] + " .no")).css({color:"#fff"});
+				$(("." + myClass[1])).css({background:"#c93356"});
+				$(("." + myClass[1] + " img")).attr("src", "heartWhite.png")
+
+			}
+			else if (listLikes[(myClass[1].split("ll")[1])] == true)
+			{
+				editClass = "." + myClass[1] + " .no";
+				editClass = "." + myClass[1] + " .no";
+				currLikes = $(editClass).html();
+				$(editClass).html(parseInt(currLikes) - 1);
+
+				listLikes[(myClass[1].split("ll")[1])] = false;
+
+				$(("." + myClass[1] + " .no")).css({color:"#111"});
+				$(("." + myClass[1])).css({background:"#eee"});
+				$(("." + myClass[1] + " img")).attr("src", "heart.png")
+
+			}
+		});
+	}
+
+
 	function display()
 	{
 		$(".results .boxy").html('');
@@ -85,7 +124,6 @@ $(document).ready(function(){
 				$(".results .boxy").append(appendText);
 				
 				checkLikes();
-				addFav();
 
 
 				flag = 1;
@@ -120,23 +158,6 @@ $(document).ready(function(){
 		
 		if(this.className.split(' ')[1])
 		{		
-			addFav();
-		}
-		else
-		{
-			removeFav();
-		}
-
-		changeOnce[boxClassNo] = false;
-		
-	});
-
-
-	function addFav()
-	{
-		//code to unselect
-		
-
 			if(changeOnce[boxClassNo] == false)
 			{
 				$((".b" + boxClassNo + " .black .top .favourite .add")).removeClass("selected");
@@ -146,18 +167,11 @@ $(document).ready(function(){
 				$(".pop").append(getHtml);
 				changeOnce[boxClassNo] = true;
 				checkLikes();
-				addFav();
-				removeFav();
 
 			}
-
-
-	}
-		
-	function removeFav()
-	{
-			//code to select
-
+		}
+		else
+		{
 			if(changeOnce[boxClassNo] == false)
 			{
 				$((".b" + boxClassNo + " .black .top .favourite .add")).addClass("selected");
@@ -169,46 +183,14 @@ $(document).ready(function(){
 				changeOnce[boxClassNo] = true;
 
 				checkLikes();
-				addFav();
-				removeFav();
 			}
+		}
 
-	}
+		changeOnce[boxClassNo] = false;
+		
+	});
 
-	function checkLikes()
-	{
-		$(".love").click(function(){
-			var myClass = this.className;
-			myClass = myClass.split(' ');
-			
-			if(listLikes[(myClass[1].split("ll")[1])] == false)
-			{
-				editClass = "." + myClass[1] + " .no";
-				editClass = "." + myClass[1] + " .no";
-				currLikes = $(editClass).html();
-				$(editClass).html(parseInt(currLikes) + 1);
-				listLikes[(myClass[1].split("ll")[1])] = true;
 
-				$(("." + myClass[1] + " .no")).css({color:"#fff"});
-				$(("." + myClass[1])).css({background:"#c93356"});
-				$(("." + myClass[1] + " img")).attr("src", "heartWhite.png")
-
-			}
-			else if (listLikes[(myClass[1].split("ll")[1])] == true)
-			{
-				editClass = "." + myClass[1] + " .no";
-				editClass = "." + myClass[1] + " .no";
-				currLikes = $(editClass).html();
-				$(editClass).html(parseInt(currLikes) - 1);
-				listLikes[(myClass[1].split("ll")[1])] = false;
-
-				$(("." + myClass[1] + " .no")).css({color:"#111"});
-				$(("." + myClass[1])).css({background:"#eee"});
-				$(("." + myClass[1] + " img")).attr("src", "heart.png")
-
-			}
-		});
-	}
 
 	
 
