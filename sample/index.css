@@ -347,7 +347,7 @@ a:hover {
     margin: 0;
     opacity: 0.9;
     letter-spacing: .1rem;
-    padding:0.1rem 0;
+    padding: 0.1rem 0;
     font-family: 'Titillium Web', serif;
     font-weight: 500;
     
@@ -359,6 +359,18 @@ a:hover {
         max-width: 80%;
         margin : auto;
     }
+
+    .small-project {
+        width: 20rem;
+    }
+
+    .section25 h2 {
+        font-size: .7rem;
+    }
+
+    .section25 span {
+        font-size: .6rem;
+    }
 }
 
 @media (max-width: 850px) {
@@ -368,13 +380,41 @@ a:hover {
 
     .section1 img {
         max-width: 20rem;
+    }    
+}
+
+@media (max-width: 750px) {
+    .small-project {
+        width: 100%;
     }
+
+    .small-project img {
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .small-project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-project > .d-flex {
+        justify-content: center;
+    }
+
+    .section25 h2 {
+        font-size: 1rem;
+    }
+
+    .section25 span {
+        font-size: .9rem;
+    }  
 }
 
 @media (max-width: 600px) {
     .project img {
-        max-width: 80%;
-        order: 1;
+        max-width: 70%;
+        margin: 1.4rem 0;
     }
 }
 
@@ -390,6 +430,10 @@ a:hover {
     h4 {
         text-align: center;
         padding-left: 0rem !important;
+    }
+
+    .small-project img {
+        width: 15rem;
     }
 
     .hide-500 {
@@ -413,9 +457,49 @@ a:hover {
     }
 }
 
+@media (max-width: 400px) {
+    .det p {
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    hide {
+        display: none;
+    }
+
+    h3 {
+        font-size: 1.3rem !important;
+    }
+
+    .section3 h6 {
+        font-size: .8rem;
+    }
+
+    .section3 p {
+        font-size: .8rem;
+    }
+
+    .section3 img {
+        padding:.4rem;
+    }
+}
+
+
+
 @media (max-width: 300px) {
+    .section1 {
+        width: auto;
+        height: auto;
+    }
     .section1 img {
         max-width: 10rem;
+    }
+
+    .small-project img {
+        width: 10rem;
     }
 
     h4 {
@@ -428,6 +512,15 @@ a:hover {
 
     .size-increase {
         font-size: .7rem !important;
+    }
+
+    .section3 img {
+        margin: 1rem .5rem;
+        padding: 0rem;
+        height: 1.8rem;
+        opacity: 0.3;
+        box-sizing: content-box;
+        cursor: pointer;
     }
 }
 
