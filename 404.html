@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Hritik Aggarwal | Portfolio</title><meta charset="UTF-8"><meta name="author" content="Hritik Aggarwal"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-101192439-1', 'auto');ga('send', 'pageview');</script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">	
+	<title>Hritik Aggarwal | Portfolio</title>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Hritik Aggarwal" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<meta name="description" content="I'm an Innovative Developer and a UX Designer available for freelancing. Visit my website for more information!" />
+	<meta name=”robots” content=”noindex,follow” />
+
+	<link rel="canonical" href="https://hritikaggarwal.com/" />
+
+    <!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">	
 	<style type="text/css">
-		*
-		{
+		* {
 		    transition: .3s ease;
 		}
-		body,html
-		{
+
+		body,html {
 			margin:0;
 			padding: 0;
 			background: #ededed;
@@ -20,146 +28,62 @@
 			height: 100%;
 			position: relative;
 			overflow: hidden;
+			background-image: url('404.svg');
+			background-attachment: fixed;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 		}
 
-		.container
-		{
-			width: 100%;
-			height: auto;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
+		h1 {
+			color: #222;
+			font-size: 5em;
+			margin: 0;
+			margin-bottom: 10px;
+			font-weight: 700;
 		}
 
-		img
-		{
-			width: 750px;
+		h3 {
+			color: #222;
+			font-size: 2.5em;
+			margin: 0;
+			font-weight: 700;
 		}
 
-		button
-		{
-			background:  none;
+		button {
 			border:  none;
 			outline: none;
-		    width:200px;
-		    height:55px;
-		    background:#2caafa;
-		    font-size:.8em;
-		    user-select:none;
-		    -moz-user-select:none;
-		    -webkit-user-select:none;
-		    -ms-user-select:none;
-		    position:relative;
-		    top:-2px;
-		    margin:20px 15px 0;
-		    line-height:55px;
-		    color:#fefefe;
-		    text-align:center;
-		    cursor:pointer;
+		    width: 200px;
+		    height: 55px;
+		    background: #25215c;
+		    font-size: .8em;
+		    user-select: none;
+		    -moz-user-select: none;
+		    -webkit-user-select: none;
+		    -ms-user-select: none;
+		    position: relative;
+		    margin-top: 20px;
+		    line-height: 55px;
+		    color: #fefefe;
+		    cursor: pointer;
 		    transform: scale(1); 
-		    overflow:hidden;
 		    letter-spacing: 1px;
 		    font-weight: 800;
-		    box-shadow: 4px 4px 0 #b2e1ff;
+		    box-shadow: 4px 4px 0 #5e59a1;
 		}
 
-		button:active
-		{
+		button:active {
 		    transform: scale(.9); 
-
 		}
-
-		.info
-		{
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			left: 48%;
-		}
-
-		h3
-		{
-			color: #111;
-			font-size: 1em;
-			margin: 0;
-			font-weight: 300;
-		}
-
-		@media(max-width: 755px)
-		{
-			img
-			{
-				width: 550px;
-			}
-
-			.info
-			{
-				left: 43%;
-			}
-
-			h3
-			{
-				font-size: .8em;
-			}
-
-			button
-			{
-				width:150px;
-		    	height:55px;
-			}
-		}
-
-
-		@media(max-width: 570px)
-		{
-			img
-			{
-				width: 100%;
-			}
-
-			.info
-			{
-				position: relative;
-				top: 10px;
-				transform: translateY(0%);
-				left: 0%;
-				right: 0%;
-				margin: auto;
-			}
-
-			h3
-			{
-				font-size: .8em;
-			}
-
-			button
-			{
-				width:150px;
-		    	height:55px;
-			}
-		}
-
-		@media(max-width: 220px)
-		{
-			
-
-			button
-			{
-				width:120px;
-		    	height:45px;
-		    	line-height: 45px;
-			}
-		}
-
 	</style>
 </head>
 <body>
-<div class="container">
-	<img src="404.png">
-	<div class="info">
-		<h3>Don't worry. The hero is at your rescue</h3>
-		<a href="http://www.hritikaggarwal.com"><button>SAVE ME!</button></a>
-	</div>
-</div>
+	<h1>404</h1>
+	<h3>GET BACK TO SAFETY!</h3>
+	<a href="http://www.hritikaggarwal.com"><button>SAVE ME!</button></a>
 </body>
 </html>

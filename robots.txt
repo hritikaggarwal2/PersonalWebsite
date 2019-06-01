@@ -1,0 +1,15 @@
+User-agent: *
+
+Disallow: /links/
+Disallow: /projects/
+Disallow: /404.svg
+Disallow: /404.html
+Disallow: /background.jpeg
+Disallow: /CNAME
+Disallow: /favicon.ico
+Disallow: /favicon.png
+Disallow: /hritik.png
+Disallow: /index.css
+Disallow: /index.js
+Disallow: /particle.js
+Disallow: /README.md

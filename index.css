@@ -23,6 +23,7 @@ body,html {
 	background: #1b1b1b;
     font-family: josefin-sans, sans-serif;
     overflow: hidden;
+
 }
 
 /* PARTICLE JS */
@@ -55,15 +56,17 @@ canvas {
 .section1 h1,
 .section1 h4,
 .section1 img,
-.section2 h1,
-.project .det h2,
+.section1 button,
+
+.section2 h2,
+.project .det h3,
 .project .det h5,
 .project .det p,
 .project img,
 .section25 .small-project dot,
 .section25 h5,
 .section25 .small-project-img,
-.section25 .small-project h2,
+.section25 .small-project h6,
 .section25 .small-project span,
 
 .section3 h3,
@@ -83,8 +86,9 @@ canvas {
 .section1 h1,
 .section1 h4,
 .section1 img,
-.section2 h1,
-.project .det h2,
+
+.section2 h2,
+.project .det h3,
 .project .det h5,
 .project .det p,
 
@@ -100,7 +104,7 @@ canvas {
     top: 20px;
 }
 
-.section25 .small-project h2 {
+.section25 .small-project h6 {
     position: relative;
     left: -15px;
 }
@@ -176,13 +180,14 @@ h4 {
     color: #fff;
 }
 
-.section2 h1 {
+.section2 h2 {
     text-align: center !important;
-    margin: 3rem auto 1rem auto !important;
-    font-size: 2.5rem;
+    margin: 2.7rem auto !important;
+    font-size: 2.2rem;
     box-sizing: content-box;
-    color: #444;
-    font-weight: 400;
+    color: #ccc;
+    font-weight: 300;
+    padding: 5px 10px;
 }
 
 .show-500 {
@@ -218,6 +223,37 @@ h5 {
     align-self: center;
 }
 
+a.resume {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    z-index: 99;
+}
+
+button {
+    padding: 5px 15px;
+    outline: none !important;
+    border: none;
+    border-radius: 5px;
+    font-size: .8rem;
+    border-bottom: 3px solid #000;
+    background: #111;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    border-top: 0px solid transparent;
+    transition: .3s ease;
+    font-weight: 900;
+}
+
+button:active {
+    border-bottom: 0px solid #000;
+    border-top: 3px solid transparent;
+}
 
 /* SECTION 2 STARTS HERE */
 .section2 {
@@ -260,9 +296,10 @@ h5 {
 }
 
 .det p {
-    color: #ddd;
-    font-size: 1rem;
-    letter-spacing: 0.04rem;
+    line-height: 1.85rem;
+    color: #eee;
+    font-size: 1.1rem;
+    letter-spacing: .07rem;
     font-family: titillium-web, sans-serif;
 }
 
@@ -294,13 +331,13 @@ h5 {
     }
 }
 
-h2 img {
+h3 img {
     height: 1.5rem;
     margin: -.7rem 0 0 .6rem;
     opacity: 0.1;
 }
 
-.project:hover > .det h2 img {
+.project:hover > .det h3 img {
     -webkit-animation:dim 1s infinite;
     -moz-animation:dim 1s infinite;
     -ms-animation:dim 1s infinite;
@@ -308,8 +345,11 @@ h2 img {
     animation:dim 1s infinite;
 }
 
-h2 {
+.section2 h3 {
     color: #fff;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    margin-bottom: .7rem;
 }
 
 /* SECTION 2.5 STARTS HERE */
@@ -330,7 +370,7 @@ h2 {
     letter-spacing: .01rem;
 }
 
-.section25 h2 {
+.section25 h6 {
     font-size: 1rem;
     padding: 1rem;
     align-self: center;
@@ -487,8 +527,12 @@ dot {
     background: #444;
     border-radius: 100%;
     display: block;
-    margin: 7px auto;
+    margin: 7px auto !important;
     align-items: center;
+}
+
+.section25 dot {
+    margin: 7px 0 !important;
 }
 
 a {
@@ -510,6 +554,14 @@ a:hover {
     
 }
 
+.section3 h6 {
+    font-size: 1.2rem;
+}
+
+.small-text {
+    font-size: .7rem
+}
+
 @media (max-width: 1000px) {
     .project .det {
         order: 2;
@@ -526,7 +578,7 @@ a:hover {
         height: 12rem;
     }
 
-    .section25 h2 {
+    .section25 h6 {
         font-size: .7rem;
     }
 
@@ -534,7 +586,7 @@ a:hover {
         font-size: .6rem;
     }
 
-    .section2 h1 {
+    .section2 h2 {
         margin: 3rem auto 0rem auto !important;
         font-size: 2.5rem;
     }
@@ -551,7 +603,7 @@ a:hover {
 }
 
 @media (max-width: 750px) {
-    .section2 h1 {
+    .section2 h2 {
         margin: 4rem auto 0rem auto !important;
         font-size: 2.5rem;
     }
@@ -579,7 +631,7 @@ a:hover {
         justify-content: center;
     }
 
-    .section25 h2 {
+    .section25 h6 {
         font-size: 1rem;
     }
 
@@ -594,17 +646,17 @@ a:hover {
         margin: 1.4rem 0;
     }
 
-    .section2 h1 {
+    .section2 h2 {
         margin: 3rem auto -1rem auto !important;
         font-size: 2.2rem;
     }
 
-    h2 img {
+    h3 img {
         margin: -.7rem 0 0 .6rem !important;
         opacity: 0.5;
     }
 
-    .project:hover > .det h2 img {
+    .project:hover > .det h3 img {
         -webkit-animation:dim-reverse 1s infinite;
         -moz-animation:dim-reverse 1s infinite;
         -ms-animation:dim-reverse 1s infinite;
@@ -650,17 +702,24 @@ a:hover {
         font-size: .9rem !important;
     }
 
-    .section2 h1 {
+    .section2 h2 {
         font-size: 1.8rem;
     }
 
     .extra-padding {
         padding-left: 0rem;  
     }
+
+    button {
+        order: 2;
+        position: relative;
+        top: 0%;
+        left: auto;
+    }
 }
 
 @media (max-width: 400px) {
-    h2 {
+    h3 {
         font-size: 1.5rem;
     }
 
@@ -673,7 +732,7 @@ a:hover {
     }
 
     .section3 h6 {
-        font-size: .8rem;
+        font-size: .85rem;
     }
 
     .section3 p {
@@ -684,12 +743,12 @@ a:hover {
         padding:.4rem;
     }
 
-    .section2 h1 {
+    .section2 h2 {
         margin: 2rem auto 0rem auto !important;
         font-size: 1.5rem;
     }
 
-    h2 img {
+    h3 img {
         margin: -.4rem 0 0 .6rem !important;
         height: 1rem;
         opacity: 0.5;
@@ -737,9 +796,17 @@ a:hover {
         cursor: pointer;
     }
 
-    .section2 h1 {
+    .section2 h2 {
         margin: 3rem auto -.5rem auto !important;
         font-size: 1.5rem;
+    }
+
+    button {
+        order: 2;
+        position: relative;
+        top: 0%;
+        margin-top: 10px;
+        left: auto;
     }
 
 }

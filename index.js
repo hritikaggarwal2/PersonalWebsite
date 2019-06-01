@@ -53,6 +53,12 @@ $(document).ready(function() {
         });  
     }, 3000);
 
+    setTimeout(function opacityChanger(){
+        $(".section1 button").css({
+            opacity : "1",
+        });  
+    }, 3500);
+
 
     $(window).scroll(function() {
         winodw_height = $(window).height();
@@ -60,17 +66,17 @@ $(document).ready(function() {
 
         var a = $(".section2").offset().top;
         if ($(window).scrollTop() >= a - top_load_pos) {
-            $(".section2 h1").css({opacity: 1});
+            $(".section2 h2").css({opacity: 1});
         }
 
         for (var i = 1; i <= 5; i++) {
             var wid = ".p" + i;
             if($(window).scrollTop() >= $(wid).offset().top - top_load_pos) {
-                $(wid + " .det h2").css({opacity: "1",top: "0"});
+                $(wid + " .det h3").css({opacity: "1",top: "0"});
                 $(wid + " .det h5").css({opacity: "1",top: "0"});
                 $(wid + " .det p").css({opacity: "1",top: "0"});
                 $(wid + " img").css({opacity: "1",top: "0"});
-                $(wid + " h2 img").css({opacity: ".1",top: "0"});
+                $(wid + " h3 img").css({opacity: ".1",top: "0"});
                 $(wid + " .det .line").css({width: "30px"});
             }
         }
@@ -80,7 +86,7 @@ $(document).ready(function() {
             $(".section25 h5").css({opacity: 1, top:0});
             $(".section25 .small-project dot").css({opacity: 1});
             $(".section25 .small-project-img").css({opacity: 1, top:0});
-            $(".section25 .small-project h2").css({opacity: 1, left:0});
+            $(".section25 .small-project h6").css({opacity: 1, left:0});
             $(".section25 .small-project span").css({opacity: 1, left:0});
         }
 
