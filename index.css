@@ -182,8 +182,8 @@ h4 {
 
 .section2 h2 {
     text-align: center !important;
-    margin: 2.7rem auto !important;
-    font-size: 2.2rem;
+    margin: 2.7rem auto 3.5rem auto;
+    font-size: 2rem;
     box-sizing: content-box;
     color: #ccc;
     font-weight: 300;
@@ -221,6 +221,23 @@ h5 {
     max-width: 25rem;
     z-index: 10;
     align-self: center;
+    left: -5px;
+    max-height: 100%;
+
+}
+
+@keyframes slowMoves {
+    0% {
+        left: -5px;
+    }
+
+    50% {
+        left: 5px
+    }
+
+    100% {
+        left: -5px;
+    }
 }
 
 a.resume {
@@ -348,8 +365,8 @@ h3 img {
 .section2 h3 {
     color: #fff;
     font-size: 2rem;
-    line-height: 1.2rem;
-    margin-bottom: .7rem;
+    /* line-height: 1.2rem; */
+    margin-bottom: .3rem;
 }
 
 /* SECTION 2.5 STARTS HERE */
@@ -423,6 +440,7 @@ h3 img {
     width: 100%;
     position: absolute;
     top: 100%;
+    left: 0;
     z-index: 100 !important;
     opacity: 0;
 }
@@ -587,8 +605,8 @@ a:hover {
     }
 
     .section2 h2 {
-        margin: 3rem auto 0rem auto !important;
-        font-size: 2.5rem;
+        margin: 3rem auto 3rem auto !important;
+        font-size: 2.2rem;
     }
 }
 
@@ -604,8 +622,8 @@ a:hover {
 
 @media (max-width: 750px) {
     .section2 h2 {
-        margin: 4rem auto 0rem auto !important;
-        font-size: 2.5rem;
+        margin: 4rem auto 2.4rem auto !important;
+        font-size: 2rem;
     }
 
     .small-project {
@@ -647,8 +665,8 @@ a:hover {
     }
 
     .section2 h2 {
-        margin: 3rem auto -1rem auto !important;
-        font-size: 2.2rem;
+        margin: 3rem auto 1rem auto !important;
+        font-size: 1.8rem;
     }
 
     h3 img {
@@ -744,7 +762,7 @@ a:hover {
     }
 
     .section2 h2 {
-        margin: 2rem auto 0rem auto !important;
+        margin: 2rem auto 1rem auto !important;
         font-size: 1.5rem;
     }
 
@@ -797,7 +815,7 @@ a:hover {
     }
 
     .section2 h2 {
-        margin: 3rem auto -.5rem auto !important;
+        margin: 3rem auto 2rem auto !important;
         font-size: 1.5rem;
     }
 
