@@ -3,6 +3,8 @@
 
     window.addEventListener("load", init);
     window.addEventListener("scroll", scroll);
+
+    const totalItems = 6;
     
     function init() {
         // setting the stage before starting the show
@@ -40,7 +42,7 @@
             $(".section2 h2").css({opacity: 1});
         }
 
-        for (let i = 1; i <= 8; i++) {
+        for (let i = 1; i <= totalItems; i++) {
             let wid = ".p" + i;
             if(window.scrollY >= $(wid).offset().top - top_load_pos) {
                 $(wid + " .det h3").css({opacity: "1", top: "0"});
@@ -129,9 +131,9 @@
     }
 
     function addDesigCol() {
-        $(".section1 h4").css({
-            color : "#111"
-        });  
+        // $(".section1 h4").css({
+        //     color : "#187dec"
+        // });  
     }
 
     function addPhoto() {
